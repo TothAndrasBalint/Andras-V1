@@ -50,6 +50,7 @@ function NavBar() {
       className="site-navbar"
       fixed="top"
       expand="lg"
+      data-bs-theme="dark"
       expanded={isMenuOpen}
       onToggle={setIsMenuOpen}
     >

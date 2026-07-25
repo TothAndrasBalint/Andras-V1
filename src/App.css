@@ -1,3 +1,136 @@
+.site-navbar {
+  padding-block: 0;
+
+  background-color: rgb(8 20 38 / 92%);
+  border-bottom: 1px solid var(--color-surface-strong);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.site-navbar-inner {
+  width: min(100%, var(--content-width));
+  margin-inline: auto;
+  padding: 1.25rem var(--page-gutter);
+}
+
+.site-navbar-logo {
+  margin: 0;
+
+  color: var(--color-white);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.site-navbar-logo:hover,
+.site-navbar-logo:focus {
+  color: var(--color-accent);
+}
+
+.site-navbar .navbar-nav {
+  gap: clamp(1rem, 2.5vw, 2rem);
+}
+
+.site-navbar .nav-link {
+  padding: 0;
+
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  transition: color var(--transition-fast);
+}
+
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link:focus {
+  color: var(--color-accent);
+}
+
+.site-navbar-logo:focus-visible,
+.site-navbar .nav-link:focus-visible,
+.site-navbar-toggle:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 5px;
+}
+
+.site-navbar-toggle {
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  border: 0;
+  box-shadow: none;
+}
+
+.site-navbar-toggle:focus {
+  box-shadow: none;
+}
+
+.site-navbar-toggle-line {
+  width: 1.5rem;
+  height: 2px;
+
+  background-color: var(--color-text-primary);
+  border-radius: 999px;
+
+  transition:
+    transform var(--transition-fast),
+    opacity var(--transition-fast);
+}
+
+.site-navbar-toggle[aria-expanded="true"]
+  .site-navbar-toggle-line:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.site-navbar-toggle[aria-expanded="true"]
+  .site-navbar-toggle-line:nth-child(2) {
+  opacity: 0;
+}
+
+.site-navbar-toggle[aria-expanded="true"]
+  .site-navbar-toggle-line:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.site-navbar .collapsing {
+  overflow: hidden;
+
+  transition: height 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (min-width: 992px) {
+  .site-navbar .navbar-collapse {
+    flex-grow: 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .site-navbar-inner {
+    padding-block: 1rem;
+  }
+
+  .site-navbar .navbar-nav {
+    padding: 1.25rem 0 0.75rem;
+
+    gap: 0;
+  }
+
+  .site-navbar .nav-link {
+    padding: 0.85rem 0;
+
+    color: var(--color-text-primary);
+    font-size: 1rem;
+  }
+}
+
 .site {
   width: min(100%, var(--content-width));
   min-height: 100vh;

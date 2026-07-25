@@ -1,6 +1,7 @@
 import "./App.css";
 import NavBar from "./components/NavBar.jsx";
 import About from "./components/About.jsx";
+import Experience from "./components/Experience.jsx";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         </section>
 
         <About />
+        <Experience />
       </main>
     </>
   );

@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar.jsx";
 import About from "./components/About.jsx";
 import Experience from "./components/Experience.jsx";
 import Projects from "./components/Projects.jsx";
+import Creative from "./components/Creative.jsx";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <About />
         <Experience />
         <Projects />
+        <Creative />
       </main>
     </>
   );

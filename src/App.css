@@ -812,3 +812,119 @@
     gap: var(--space-lg);
   }
 }
+
+.creative {
+  max-width: 1000px;
+  padding-block: var(--space-2xl);
+  scroll-margin-top: 6rem;
+}
+
+.creative-content {
+  max-width: 900px;
+  margin-top: var(--space-lg);
+}
+
+.creative-subtitle {
+  margin: 0;
+
+  color: var(--color-text-primary);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.creative-description {
+  max-width: 650px;
+  margin: var(--space-sm) 0 0;
+
+  color: var(--color-text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.creative-track {
+  margin-top: var(--space-lg);
+  padding: clamp(1rem, 3vw, 1.5rem);
+
+  border: 1px solid rgb(99 230 255 / 20%);
+  border-radius: 0.75rem;
+
+  background-color: var(--color-surface);
+  box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 24%);
+}
+
+.creative-track-header {
+  margin-bottom: var(--space-md);
+}
+
+.creative-track-label {
+  margin: 0 0 0.25rem;
+
+  color: var(--color-accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.creative-track-title {
+  margin: 0;
+
+  color: var(--color-white);
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.creative-audio {
+  display: block;
+  width: 100%;
+
+  color-scheme: dark;
+}
+
+.creative-link {
+  display: inline-block;
+  margin-top: var(--space-md);
+
+  color: var(--color-accent);
+  font-weight: 600;
+
+  transition:
+    color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.creative-link:hover {
+  color: var(--color-white);
+  transform: translateY(-2px);
+}
+
+.creative-link:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+  .creative {
+    padding-block: var(--space-xl);
+  }
+
+  .creative-subtitle {
+    font-size: 1.4rem;
+  }
+
+  .creative-description {
+    font-size: 1rem;
+  }
+
+  .creative-player {
+    margin-top: var(--space-md);
+  }
+}
+
+.creative-audio {
+  display: block;
+  width: 100%;
+}

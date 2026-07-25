@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title description">
+  <title id="title">Travel marketplace intelligence architecture</title>
+
+  <desc id="description">
+    Marketplace sources flow through collection, normalization, historical
+    storage, dashboarding, and business decision stages.
+  </desc>
+
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#173454"></stop>
+      <stop offset="100%" stop-color="#0b1d34"></stop>
+    </linearGradient>
+
+    <linearGradient id="accentSurface" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#183d5d"></stop>
+      <stop offset="100%" stop-color="#102a47"></stop>
+    </linearGradient>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#63e6ff" stroke-opacity="0.035" stroke-width="1"></path>
+    </pattern>
+
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#63e6ff"></path>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="760" rx="24" fill="url(#background)"></rect>
+  <rect width="1200" height="760" rx="24" fill="url(#grid)"></rect>
+
+  <text x="70" y="85" fill="#f4f8ff" font-family="Arial, sans-serif" font-size="32" font-weight="700">
+    Marketplace Intelligence Pipeline
+  </text>
+
+  <text x="70" y="122" fill="#93a4c3" font-family="Arial, sans-serif" font-size="17">
+    Automated collection, historical comparison, and decision support
+  </text>
+
+  <!-- Source cards -->
+
+  <g>
+    <rect x="70" y="190" width="230" height="96" rx="14" fill="#10233f" stroke="#63e6ff" stroke-opacity="0.24"></rect>
+
+    <text x="95" y="229" fill="#63e6ff" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2">
+      MARKETPLACE
+    </text>
+
+    <text x="95" y="261" fill="#d7e4ff" font-family="Arial, sans-serif" font-size="20">
+      Travel listings
+    </text>
+  </g>
+
+  <g>
+    <rect x="70" y="310" width="230" height="96" rx="14" fill="#10233f" stroke="#63e6ff" stroke-opacity="0.24"></rect>
+
+    <text x="95" y="349" fill="#63e6ff" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2">
+      PRICING
+    </text>
+
+    <text x="95" y="381" fill="#d7e4ff" font-family="Arial, sans-serif" font-size="20">
+      Tickets &amp; availability
+    </text>
+  </g>
+
+  <g>
+    <rect x="70" y="430" width="230" height="96" rx="14" fill="#10233f" stroke="#63e6ff" stroke-opacity="0.24"></rect>
+
+    <text x="95" y="469" fill="#63e6ff" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2">
+      POSITIONING
+    </text>
+
+    <text x="95" y="501" fill="#d7e4ff" font-family="Arial, sans-serif" font-size="20">
+      Reviews &amp; products
+    </text>
+  </g>
+
+  <!-- Collection and normalization -->
+
+  <rect x="390" y="245" width="250" height="220" rx="18" fill="url(#accentSurface)" stroke="#63e6ff" stroke-opacity="0.42"></rect>
+
+  <circle cx="440" cy="300" r="23" fill="#63e6ff" fill-opacity="0.12"></circle>
+
+  <path d="M 430 300 H 450 M 440 290 V 310" stroke="#63e6ff" stroke-width="4" stroke-linecap="round"></path>
+
+  <text x="425" y="352" fill="#f4f8ff" font-family="Arial, sans-serif" font-size="24" font-weight="700">
+    Collection
+  </text>
+
+  <text x="425" y="386" fill="#93a4c3" font-family="Arial, sans-serif" font-size="17">
+    Scheduled extraction
+  </text>
+
+  <text x="425" y="415" fill="#93a4c3" font-family="Arial, sans-serif" font-size="17">
+    Validation and cleanup
+  </text>
+
+  <text x="425" y="444" fill="#93a4c3" font-family="Arial, sans-serif" font-size="17">
+    Cross-market normalization
+  </text>
+
+  <!-- Historical store -->
+
+  <rect x="735" y="190" width="390" height="130" rx="18" fill="#10233f" stroke="#63e6ff" stroke-opacity="0.24"></rect>
+
+  <text x="770" y="235" fill="#63e6ff" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2">
+    LONGITUDINAL DATA
+  </text>
+
+  <text x="770" y="274" fill="#f4f8ff" font-family="Arial, sans-serif" font-size="24" font-weight="700">
+    Historical market store
+  </text>
+
+  <text x="770" y="301" fill="#93a4c3" font-family="Arial, sans-serif" font-size="16">
+    Comparable records across products, competitors, and time
+  </text>
+
+  <!-- Dashboard -->
+
+  <rect x="735" y="360" width="390" height="130" rx="18" fill="#10233f" stroke="#63e6ff" stroke-opacity="0.24"></rect>
+
+  <text x="770" y="405" fill="#63e6ff" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2">
+    WEEKLY OUTPUT
+  </text>
+
+  <text x="770" y="444" fill="#f4f8ff" font-family="Arial, sans-serif" font-size="24" font-weight="700">
+    Decision-ready dashboards
+  </text>
+
+  <text x="770" y="471" fill="#93a4c3" font-family="Arial, sans-serif" font-size="16">
+    Pricing, availability, positioning, and trend comparisons
+  </text>
+
+  <!-- Decisions -->
+
+  <rect x="390" y="565" width="735" height="110" rx="18" fill="#0d2943" stroke="#63e6ff" stroke-opacity="0.32"></rect>
+
+  <text x="430" y="608" fill="#63e6ff" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2">
+    OPERATIONAL AND COMMERCIAL DECISIONS
+  </text>
+
+  <text x="430" y="647" fill="#d7e4ff" font-family="Arial, sans-serif" font-size="20">
+    Capacity planning · Departure frequency · Product configuration · Pricing
+  </text>
+
+  <!-- Flow lines -->
+
+  <path d="M 300 238 H 345 Q 365 238 365 258 V 330 Q 365 350 390 350" fill="none" stroke="#63e6ff" stroke-opacity="0.62" stroke-width="2" marker-end="url(#arrow)"></path>
+
+  <path d="M 300 358 H 390" fill="none" stroke="#63e6ff" stroke-opacity="0.62" stroke-width="2" marker-end="url(#arrow)"></path>
+
+  <path d="M 300 478 H 345 Q 365 478 365 458 V 390 Q 365 370 390 370" fill="none" stroke="#63e6ff" stroke-opacity="0.62" stroke-width="2" marker-end="url(#arrow)"></path>
+
+  <path d="M 640 310 H 690 Q 710 310 710 285 V 255 Q 710 255 735 255" fill="none" stroke="#63e6ff" stroke-opacity="0.62" stroke-width="2" marker-end="url(#arrow)"></path>
+
+  <path d="M 930 320 V 360" fill="none" stroke="#63e6ff" stroke-opacity="0.62" stroke-width="2" marker-end="url(#arrow)"></path>
+
+  <path d="M 930 490 V 535 Q 930 555 910 565" fill="none" stroke="#63e6ff" stroke-opacity="0.62" stroke-width="2" marker-end="url(#arrow)"></path>
+</svg>
